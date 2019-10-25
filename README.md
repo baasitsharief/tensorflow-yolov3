@@ -111,6 +111,16 @@ $ cd ..
 $ python convert_weight.py --train_from_coco
 $ python train.py
 ```
+##### (3) bottleneck training from COCO weights(recommend):
+
+```bashrc
+$ cd checkpoint
+$ wget https://github.com/YunYang1994/tensorflow-yolov3/releases/download/v1.0/yolov3_coco.tar.gz
+$ tar -xvf yolov3_coco.tar.gz
+$ cd ..
+$ python convert_weight.py --train_from_coco
+$ python train_bottleneck.py
+```
 
 #### how to test and evaluate it ?
 ```
